@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="gender">
+        <option value="select geneder"> gender</option>
+        <option value="female">female</option>
+        <option value="male">male</option>
+        <option value="trans">trans</option>
+    </select>
+    <br>
+    <br>
+    <button   onclick="submit()"> submit</button>
+    <br>
+    <br>
+    <i id="output"> show gender</i>
+</body>
+</html>
+<script>
+    function submit()
+    {
+    let gender= document.getElementById("gender").value;
+    console.log(gender);
+    document.getElementById("output").innerText=gender;
+    }
+</script>
