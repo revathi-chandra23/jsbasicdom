@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="firstname"> first name</h1>
+    <h2 id ="lastname">  last name</h2>
+    <h1 id="fullname"> full name</h1>
+    <button onclick="setfirst()">first name</button>
+    <button onclick="setlast()">last name </button>
+    <button onclick="setfullname()">full name</button>
+    <button onclick="restore()">reset </button>
+</body>
+</html>
+<script>
+    function setfirst()
+    {
+        document.getElementById("firstname").innerText=" revathi chandra";
+    };
+    function setlast()
+    {
+        document.getElementById("lastname").innerText=" Tannidi";
+    };
+    function setfullname()
+    {
+        document.getElementById("fullname").innerText=" Revathi chandra Tannidi";
+    };
+    function restore()
+    {
+        document.getElementById("firstname").innerText=" first name";
+        document.getElementById("lastname").innerText=" lastname";
+        document.getElementById("fullname").innerText=" fullname";
+    }
+</script>
