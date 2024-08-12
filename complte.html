@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="achu"> revathi chandra</h1>
+  <button id="btn" onclick="complete()" > mark as complete </button>  
+</body>
+</html>
+<script>
+    document.getElementById("achu").style.backgroundColor ="red";
+    document.getElementById("achu").style.color="white";
+    document.getElementById("achu").style.border="dashed";
+    document.getElementById("achu").style.borderBlockColor="black";
+    
+
+    function complete()
+    {
+        document.getElementById("btn").innerText=" completed";
+        document.getElementById("btn").style.backgroundColor="blue"
+        document.getElementById("btn").style.color="white";
+        document.getElementById("btn").style.fontSize="40px";
+    }
+</script>
